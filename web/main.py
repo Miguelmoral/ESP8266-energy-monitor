@@ -126,12 +126,12 @@ def graficas():
 
     if numero_datos_sig != 0:
         for i in myCursor_sig:
-            sum_irms = sum_irms + i["values"][0]
-            sum_power_factor = sum_power_factor + i["values"][1]
+            sum_irms_sig = sum_irms_sig + i["values"][0]
+            sum_power_factor_sig = sum_power_factor_sig + i["values"][1]
             #sum_irms = sum_irms + i["values"][2]
             #sum_power_factor = sum_power_factor + i["values"][3]
 
-        media_real_power_Sig = sum_real_power_sig/numero_datos_sig
+        media_real_power_sig = sum_real_power_sig/numero_datos_sig
         media_vrms_sig = sum_vrms_sig/numero_datos_sig
         media_irms_sig = sum_irms_sig/numero_datos_sig
         media_power_factor_sig = sum_power_factor_sig/numero_datos_sig
@@ -159,8 +159,8 @@ def graficas():
 
     if numero_datos_ant != 0:
         for i in myCursor_ant:
-            sum_irms = sum_irms + i["values"][0]
-            sum_power_factor = sum_power_factor + i["values"][1]
+            sum_irms_ant = sum_irms_ant + i["values"][0]
+            sum_power_factor_ant = sum_power_factor_ant + i["values"][1]
             #sum_irms = sum_irms + i["values"][2]
             #sum_power_factor = sum_power_factor + i["values"][3]
 
@@ -189,8 +189,8 @@ def graficas():
 
     if numero_datos_actual != 0:
         for i in myCursor_actual:
-            sum_irms = sum_irms + i["values"][0]
-            sum_power_factor = sum_power_factor + i["values"][1]
+            sum_irms_actual = sum_irms_actual + i["values"][0]
+            sum_power_factor_actual = sum_power_factor_actual + i["values"][1]
             #sum_irms = sum_irms + i["values"][2]
             #sum_power_factor = sum_power_factor + i["values"][3]
 
