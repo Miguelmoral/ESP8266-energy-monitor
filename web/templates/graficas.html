@@ -33,7 +33,7 @@
             }
         },
         xAxis: {
-            type: 'datetime'
+            categories: ['Mes anterior', 'Mes actual', 'Mes siguiente']
         },
         legend: {
             layout: 'vertical',
@@ -43,17 +43,11 @@
 
 
         series: [{
-            name: 'Real power',
+            name: 'Irms',
             data: [{{datos_ant[0]}}, {{datos_actual[0]}}, {{datos_sig[0]}}]
         }, {
-            name: 'Vrms',
+            name: 'Potencia',
             data: [{{datos_ant[1]}}, {{datos_actual[1]}}, {{datos_sig[1]}}]
-        }, {
-            name: 'Irms',
-            data: [{{datos_ant[2]}}, {{datos_actual[2]}}, {{datos_sig[2]}}]
-        }, {
-            name: 'Power factor',
-            data: [{{datos_ant[3]}}, {{datos_actual[3]}}, {{datos_sig[3]}}]
         }]
 
 
@@ -72,7 +66,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.html">Monitorización electrica</a>
+                <a class="navbar-brand" href="index.html">Monitorización eléctrica</a>
             </div>
 
             <div class="header-right">
@@ -91,46 +85,13 @@
 
 
                   <li>
-                      <a class="active-menu" href="/"><i class="fa fa-dashboard "></i>Principal</a>
+                      <a class="index.html" href="/"><i class="fa fa-dashboard "></i>Principal</a>
                   </li>
                   <li>
-                      <a href="#"><i class="fa fa-desktop "></i>Ultimas visitas <span class="fa arrow"></span></a>
-                       <ul class="nav nav-second-level">
-                         {% if session['logged_in'] %}
-                          <section class="secciones">
-
-                             <a href= {{ session['links'][0] }} ><i class="fa fa-coffee"></i> {{ session['links'][0] }} &nbsp;&nbsp;&nbsp; </a>
-
-                             <a href= {{ session['links'][1] }} ><i class="fa fa-coffee"></i> {{ session['links'][1] }} &nbsp;&nbsp;&nbsp; </a>
-
-                             <a href= {{ session['links'][2] }} ><i class="fa fa-coffee"></i> {{ session['links'][2] }} &nbsp;&nbsp;&nbsp; </a>
-                          </section>
-                          {% endif %}
-
-                      </ul>
-                  </li>
-                  <li>
-                     <a href="#"><i class="fa fa-bicycle "></i>Forms <span class="fa arrow"></span></a>
-                      <ul class="nav nav-second-level">
-
-                          <li>
-                             <a href="form.html"><i class="fa fa-desktop "></i>Basic </a>
-                         </li>
-                          <li>
-                             <a href="form-advance.html"><i class="fa fa-code "></i>Advance</a>
-                         </li>
-
-
-                     </ul>
-                 </li>
-                  <li>
-                      <a href="table.html"><i class="fa fa-flash "></i>Tabla de datos consultados </a>
+                      <a class="active-menu" href="/"><i class="fa fa-dashboard "></i>Tabla de datos consultados </a>
 
                   </li>
 
-                  <li>
-                      <a href="login.html"><i class="fa fa-sign-in "></i>Login Page</a>
-                  </li>
               </ul>
             </div>
 
@@ -160,10 +121,8 @@
                                     <thead>
                                         <tr>
                                             <th>Fecha</th>
-                                            <th>Real Power</th>
-                                            <th>vrms</th>
-                                            <th>irms</th>
-                                            <th>Power factor</th>
+                                            <th>Irms (A)</th>
+                                            <th>Potencia (W)</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -173,8 +132,6 @@
                                           <td>{{i["date"]}}</td>
                                           <td>{{ i["values"][0] }}</td>
                                           <td>{{ i["values"][1] }}</td>
-                                          <td>{{ i["values"][2] }}</td>
-                                          <td>{{ i["values"][3] }}</td>
                                       </tr>
                             					{% endfor %}
                                     </tbody>
@@ -197,20 +154,12 @@
                               <div class="form-group">
                                 <ul>
                                   <li>
-                                  Media real power:
+                                  Media IRMS:
                                     {{datos[0]}}
                                   </li>
                                   <li>
-                                  Media vrms:
+                                  Media Potencia:
                                     {{datos[1]}}
-                                  </li>
-                                  <li>
-                                  Media irms:
-                                    {{datos[2]}}
-                                  </li>
-                                  <li>
-                                  Media power factor:
-                                    {{datos[3]}}
                                   </li>
 
                               </ul>

@@ -83,26 +83,19 @@ def graficas():
 
     #---------------------------Calculo medias----------------------------------
     sum_real_power = 0
-    sum_vrms = 0
     sum_irms = 0
-    sum_power_factor = 0
     media_real_power = 0
-    media_vrms = 0
     media_irms = 0
-    media_power_factor = 0
 
     if numero_datos != 0:
         for i in myCursoraux:
             sum_irms = sum_irms + i["values"][0]
-            sum_power_factor = sum_power_factor + i["values"][1]
-            #sum_irms = sum_irms + i["values"][2]
-            #sum_power_factor = sum_power_factor + i["values"][3]
+            sum_real_power = sum_real_power + i["values"][1]
 
         media_real_power = sum_real_power/numero_datos
-        media_vrms = sum_vrms/numero_datos
         media_irms = sum_irms/numero_datos
-        media_power_factor = sum_power_factor/numero_datos
-    datos = [media_real_power, media_vrms, media_irms, media_power_factor]
+
+    datos = [media_irms, media_real_power]
     #--------------------------Fin calculo medias-------------------------------
     #--------------------------Highcharts---------------------------------------
     #Datos siguientes
@@ -116,27 +109,19 @@ def graficas():
     numero_datos_sig = db.pruebas.count({'date': {'$lt': end_siguiente, '$gte': start_siguiente}})
 
     sum_real_power_sig = 0
-    sum_vrms_sig = 0
     sum_irms_sig = 0
-    sum_power_factor_sig = 0
     media_real_power_sig = 0
-    media_vrms_sig = 0
     media_irms_sig = 0
-    media_power_factor_sig = 0
 
     if numero_datos_sig != 0:
         for i in myCursor_sig:
             sum_irms_sig = sum_irms_sig + i["values"][0]
-            sum_power_factor_sig = sum_power_factor_sig + i["values"][1]
-            #sum_irms = sum_irms + i["values"][2]
-            #sum_power_factor = sum_power_factor + i["values"][3]
+            sum_real_power_sig = sum_real_power_sig + i["values"][1]
 
-        media_real_power_sig = sum_real_power_sig/numero_datos_sig
-        media_vrms_sig = sum_vrms_sig/numero_datos_sig
+        media_real_power_Sig = sum_real_power_sig/numero_datos_sig
         media_irms_sig = sum_irms_sig/numero_datos_sig
-        media_power_factor_sig = sum_power_factor_sig/numero_datos_sig
 
-    datos_sig = [media_real_power_sig, media_vrms_sig, media_irms_sig, media_power_factor_sig]
+    datos_sig = [media_irms_sig, media_real_power_sig]
 
     #datos anteriores
     if int(mes_inicio)-1 == 0:
@@ -149,27 +134,19 @@ def graficas():
     numero_datos_ant = db.pruebas.count({'date': {'$lt': end_anterior, '$gte': start_anterior}})
 
     sum_real_power_ant = 0
-    sum_vrms_ant = 0
     sum_irms_ant = 0
-    sum_power_factor_ant = 0
     media_real_power_ant = 0
-    media_vrms_ant = 0
     media_irms_ant = 0
-    media_power_factor_ant = 0
 
     if numero_datos_ant != 0:
         for i in myCursor_ant:
             sum_irms_ant = sum_irms_ant + i["values"][0]
-            sum_power_factor_ant = sum_power_factor_ant + i["values"][1]
-            #sum_irms = sum_irms + i["values"][2]
-            #sum_power_factor = sum_power_factor + i["values"][3]
+            sum_real_power_ant = sum_real_power_ant + i["values"][1]
 
         media_real_power_ant = sum_real_power_ant/numero_datos_ant
-        media_vrms_ant = sum_vrms_ant/numero_datos_ant
         media_irms_ant = sum_irms_ant/numero_datos_ant
-        media_power_factor_ant = sum_power_factor_ant/numero_datos_ant
 
-    datos_ant = [media_real_power_ant, media_vrms_ant, media_irms_ant, media_power_factor_ant]
+    datos_ant = [media_irms_ant, media_real_power_ant]
 
     #datos actuales
 
@@ -179,27 +156,19 @@ def graficas():
     numero_datos_actual = db.pruebas.count({'date': {'$lt': end_actual, '$gte': start_actual}})
 
     sum_real_power_actual = 0
-    sum_vrms_actual = 0
     sum_irms_actual = 0
-    sum_power_factor_actual = 0
     media_real_power_actual = 0
-    media_vrms_actual = 0
     media_irms_actual = 0
-    media_power_factor_actual = 0
 
     if numero_datos_actual != 0:
         for i in myCursor_actual:
             sum_irms_actual = sum_irms_actual + i["values"][0]
-            sum_power_factor_actual = sum_power_factor_actual + i["values"][1]
-            #sum_irms = sum_irms + i["values"][2]
-            #sum_power_factor = sum_power_factor + i["values"][3]
+            sum_real_power_actual = sum_real_power_actual + i["values"][1]
 
         media_real_power_actual = sum_real_power_actual/numero_datos_actual
-        media_vrms_actual = sum_vrms_actual/numero_datos_actual
         media_irms_actual = sum_irms_actual/numero_datos_actual
-        media_power_factor_actual = sum_power_factor_actual/numero_datos_actual
 
-    datos_actual = [media_real_power_actual, media_vrms_actual, media_irms_actual, media_power_factor_actual]
+    datos_actual = [media_irms_actual, media_real_power_actual]
 
     #-------------------------Fin Highcharts------------------------------------
     salida = calendar.monthrange(int(anio_inicio),int(mes_inicio))[1]
