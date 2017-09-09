@@ -21,7 +21,7 @@
 
     <script>
     $(function () {
-    var myChart = Highcharts.chart('container', {
+    var myChart = Highcharts.chart('container1', {
 
         title: {
             text: 'Información por meses'
@@ -55,6 +55,46 @@
 })
 
 </script>
+
+
+<script>
+$(function () {
+var myChart = Highcharts.chart('container2', {
+
+    title: {
+        text: 'Ultimas medidas'
+    },
+
+    yAxis: {
+        title: {
+            text: 'Medida'
+        }
+    },
+    xAxis: {
+        categories: ['', '', '']
+    },
+    legend: {
+        layout: 'vertical',
+        align: 'right',
+        verticalAlign: 'middle'
+    },
+
+
+    series: [{
+        name: 'Potencia',
+        data: [{{datosgraf_power[0]}}, {{datosgraf_power[1]}}, {{datosgraf_power[2]}}]
+    }, {
+        name: 'Irms',
+        data: [{{datosgraf_irms[0]}}, {{datosgraf_irms[1]}}, {{datosgraf_irms[2]}}]
+    }]
+
+
+});
+})
+
+</script>
+
+
 </head>
 <body>
     <div id="wrapper">
@@ -172,7 +212,11 @@
                 </div>
             </div>
 
-              <div id="container" style="min-width: 310px;max-width: 800px;height: 400px;margin: 0 auto"></div>
+              <div id="container1" style="min-width: 310px;max-width: 800px;height: 400px;margin: 0 auto"></div>
+
+              <br><br>
+
+              <div id="container2" style="min-width: 310px;max-width: 800px;height: 400px;margin: 0 auto"></div>
 
             </div>
             <!-- /. PAGE INNER  -->

@@ -19,6 +19,7 @@ app = Flask(__name__)
 app.secret_key = 'adadasasd9sd9d9dsss'
 @app.route('/', methods = ['GET'])
 def index():
+    # myCursor = db.restaurants.find({"sensorType":"Power"})
     #--------------------Busqueda fecha-----------------------
     start = datetime.datetime(2017, 05, 04, 19, 28, 07)
     end = datetime.datetime(2017, 05, 04, 23, 28, 35)
@@ -27,9 +28,15 @@ def index():
 
 @app.route('/postjson', methods = ['GET','POST'])
 def postJsonHandler():
+    # contenido = request.get_json()
+    # #contenido = json.loads(data)
+    # return (contenido)
 
     content = request.get_json()
+    # tiempo = {}
+    # tiempo = time.strftime("%c")
     if content:
+        # content['date'] = time.strftime("%c")
         raw = datetime.datetime.now(pytz.utc)
         tiempo = raw.astimezone(pytz.timezone('Europe/Brussels'))
         content['date'] = tiempo
@@ -79,11 +86,15 @@ def graficas():
     sum_irms = 0
     media_real_power = 0
     media_irms = 0
+    datosgraf_irms = []
+    datosgraf_power = []
 
     if numero_datos != 0:
         for i in myCursoraux:
             sum_irms = sum_irms + i["values"][0]
             sum_real_power = sum_real_power + i["values"][1]
+            datosgraf_irms.insert(0, i["values"][0])
+            datosgraf_power.insert(0, i["values"][1])
 
         media_real_power = sum_real_power/numero_datos
         media_irms = sum_irms/numero_datos
@@ -170,7 +181,7 @@ def graficas():
     print "end:"
     print end
 
-    return render_template('graficas.html', myCursor=objetos, datos = datos, pagination=pagination, datos_ant = datos_ant, datos_sig = datos_sig, mes_inicio = int(mes_inicio), datos_actual = datos_actual)
+    return render_template('graficas.html', myCursor=objetos, datos = datos, pagination=pagination, datos_ant = datos_ant, datos_sig = datos_sig, mes_inicio = int(mes_inicio), datos_actual = datos_actual, datosgraf_irms = datosgraf_irms, datosgraf_power = datosgraf_power)
 
 
 if __name__ == '__main__':
