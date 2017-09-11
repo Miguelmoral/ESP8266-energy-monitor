@@ -1,0 +1,234 @@
+\chapter{Pruebas}
+En el siguiente capítulo se expondrán algunas de las pruebas realizadas hasta que se consiguió finalmente realizar un diseño funcional:
+
+\begin{itemize}
+	\item \textbf{Prueba 1:} En este primera prueba se intentará hacer funcionar un circuito simple, en concreto el primer prototipo especificado en en el capítulo 4 (\ref{fig:protoboardv1}). Simplemente se quiere comprobar que todo funciona como debería por lo que en el firmware se cargará tan solo un programa simple que saque por la salida serial al ordenar los datos recogidos de el conversor analógico digital sin realizar ningún tipo de cálculo.
+	
+	\begin{table}[H]
+		\begin{center}
+			\begin{tabular}{|l|l|}
+				\hline
+				Número de prueba &  1 \\ \hline 
+				Objetivo de la prueba &  Comprobar funcionamiento del prototipo (\ref{fig:protoboardv1}).\\ \hline 
+				Procedimientos a llevar a cabo &  \makecell[l]{\tabitem Montar diseño del circuito en la protoboard. \\ \tabitem Programar un firmware sencillo.
+				\\ \tabitem Flashear el firmware en la placa NodeMCU.
+				\\ \tabitem Visualizar resultados en la pantalla del ordenador.}
+				 \\ \hline 
+				Resultado deseado &  \makecell[l]{Visualizar resultados lógicos dependiendo \\ de que aparato esté conectado al sensor.} \\ \hline 
+				Resultado obtenido &  \makecell[l]{Los resultados que vemos en pantalla son \\ siempre 0 o demasiado cercanos al 0, además son siempre \\ iguales independientemente de la electricidad que esté \\ consumiendo el aparato en cada momento.} \\ \hline  
+				Estado de la prueba &  \textbf{Error.} \\ \hline 
+				Posibles soluciones &  \makecell[l]{Diseñar otro prototipo con una entrada de energía \\diferente al micro USB. } \\ \hline 
+
+			\end{tabular}
+			\caption{Prueba 1.}
+			\label{tabla:prueba1}
+		\end{center}
+	\end{table}
+
+	\vspace{2.5cm}
+
+	\item \textbf{Prueba 2:} Para intentar solucionar el error de la prueba 1 se va a probar un segundo prototipo (\ref{fig:protoboardv2}) alimentado a través del jack de corriente para ver si el problema era que le entraba un voltaje menor al necesario utilizando la entrada micro USB propia de la placa NodeMCU.
+
+	\begin{table}[H]
+	\begin{center}
+		\begin{tabular}{|l|l|}
+			\hline
+			Número de prueba &  2 \\ \hline 
+			Objetivo de la prueba &  Comprobar funcionamiento del prototipo (\ref{fig:protoboardv2}).\\ \hline 
+			Procedimientos a llevar a cabo &  \makecell[l]{\tabitem Montar diseño del circuito en la protoboard. \\ \tabitem Programar un firmware que envíe los datos \\ a un servidor.
+				\\ \tabitem Flashear el firmware en la placa NodeMCU.
+				\\ \tabitem Visualizar resultados que se muestran en el servidor.}
+			\\ \hline 
+			Resultado deseado &  \makecell[l]{Visualizar resultados lógicos dependiendo \\ de que aparato esté conectado al sensor.} \\ \hline 
+			Resultado obtenido &  \makecell[l]{La placa NodeMCU ha resultado dañada al \\ utilizar un cargador cuya salida es corriente alterna.} \\ \hline 
+			Estado de la prueba &  \textbf{Error.} \\ \hline 
+			Posibles soluciones &  \makecell[l]{Utilizar un cargador cuya salida sea corriente continua.} \\ \hline 
+			
+		\end{tabular}
+		\caption{Prueba 2.}
+		\label{tabla:prueba2}
+		\end{center}
+	\end{table}
+
+	\vspace{10cm}
+
+	\item \textbf{Prueba 3:} Para intentar solucionar el error de la prueba 1 se va a probar un segundo prototipo (\ref{fig:protoboardv2}) alimentado a través del jack de corriente para ver si el problema era que le entraba un voltaje menor al necesario utilizando la entrada micro USB propia de la placa NodeMCU.
+
+
+
+	\begin{table}[H]
+		\begin{center}
+			\begin{tabular}{|l|l|}
+				\hline
+				Número de prueba &  2 \\ \hline 
+				Objetivo de la prueba &  Comprobar funcionamiento del prototipo (\ref{fig:protoboardv2})\\ \hline 
+				Procedimientos a llevar a cabo &  \makecell[l]{\tabitem Montar diseño del circuito en la protoboard. \\ \tabitem Programar un firmware que envíe los datos \\ a un servidor.
+					\\ \tabitem Flashear el firmware en la placa NodeMCU.
+					\\ \tabitem Visualizar resultados que se muestran en el servidor.}
+				\\ \hline 
+				Resultado deseado &  \makecell[l]{Visualizar resultados lógicos dependiendo \\ de que aparato esté conectado al sensor.} \\ \hline 
+				Resultado obtenido &  \makecell[l]{Los resultados que vemos en pantalla son \\ siempre 0 o demasiado cercanos al 0, además son siempre \\ iguales independientemente de la electricidad que esté \\ consumiendo el aparato en cada momento.} \\ \hline 
+				Estado de la prueba &  \textbf{Error.} \\ \hline 
+				Posibles soluciones &  \makecell[l]{Comprobar que el sensor de corriente \\ funcione correctamente. } \\ \hline 
+				
+			\end{tabular}
+			\caption{Prueba 2.}
+			\label{tabla:prueba2}
+		\end{center}
+	\end{table}
+
+	\vspace{8.5cm}
+	
+	\item \textbf{Prueba 4:} Se realizará una prueba simple conectando el sensor a un Arduino utilizando la comunicación serie para ver en el ordenador si el sensor está funcionando correctamente o tiene algún tipo de fallo y este es el motivo por el cuál las medidas que estamos tomando son tan cercanas al 0 y no varían en función de la energía que consume en cada momento el aparato al que está conectado el sensor.
+	
+		\begin{table}[H]
+		\begin{center}
+			\begin{tabular}{|l|l|}
+				\hline
+				Número de prueba &  4 \\ \hline 
+				Objetivo de la prueba &  Comprobar funcionamiento del sensor de corriente. \\ \hline 
+				Procedimientos a llevar a cabo &  \makecell[l]{\tabitem Montar diseño del circuito en el propio Arduino. \\ \tabitem Programar un firmware sencillo.
+					\\ \tabitem Flashear el firmware en el Arduino.
+					\\ \tabitem Visualizar resultados en la pantalla del ordenador.}
+				\\ \hline 
+				Resultado deseado &  \makecell[l]{Visualizar resultados lógicos dependiendo \\ de que aparato esté conectado al sensor.} \\ \hline 
+				Resultado obtenido &  \makecell[l]{Los resultados que vemos en pantalla son \\ siempre 0 o demasiado cercanos al 0, además son siempre \\ iguales independientemente de la electricidad que esté \\ consumiendo el aparato en cada momento.} \\ \hline 
+				Errores &  \makecell[l]{Los resultados obtenidos de la medición no son correctos \\ ya que son siempre iguales independientemente de la \\electricidad que esté consumiendo el aparato en\\ cada momento.} \\ \hline 
+				Estado de la prueba &  \textbf{Error.} \\ \hline 
+				Posibles soluciones &  \makecell[l]{Diseñar un prototipo con un amplificador \\ para conseguir valores mayores. } \\ \hline 
+				
+			\end{tabular}
+			\caption{Prueba 4.}
+			\label{tabla:prueba4}
+		\end{center}
+	\end{table}
+
+	\vspace{7cm}
+
+	\item \textbf{Prueba 5:} Para comprobar si el problema de las mediciones viene dado por que la señal que estamos midiendo es demasiado baja. El diseño de este circuito corresponde con el visto en el capítulo 4 (\ref{fig:protoboardv3}).
+
+	\begin{table}[H]
+		\begin{center}
+			\begin{tabular}{|l|l|}
+				\hline
+				Número de prueba &  5 \\ \hline 
+				Objetivo de la prueba &  Comprobar funcionamiento del prototipo (\ref{fig:protoboardv3}). \\ \hline 
+				Procedimientos a llevar a cabo &  \makecell[l]{\tabitem Montar diseño del circuito en la protoboard. \\ \tabitem Programar un firmware que envíe los datos \\ a un servidor.
+				\\ \tabitem Flashear el firmware en la placa NodeMCU.
+				\\ \tabitem Visualizar resultados que se muestran en el servidor.}
+				\\ \hline 
+				Resultado deseado &  \makecell[l]{Visualizar resultados lógicos dependiendo \\ de que aparato esté conectado al sensor.} \\ \hline 
+				Resultado obtenido &  \makecell[l]{Los resultados obtenidos de la medición no son correctos \\ ya que son siempre iguales independientemente de la \\electricidad que esté consumiendo el aparato en\\ cada momento.} \\ \hline 
+				Estado de la prueba &  \textbf{Error} \\ \hline 
+				Posibles soluciones &  \makecell[l]{Colocar el sensor de corriente rodeando tan solo \\ uno de los cables (una fase) que tiene la manguera.} \\ \hline 
+				
+			\end{tabular}
+			\caption{Prueba 5.}
+			\label{tabla:prueba5}
+		\end{center}
+	\end{table}
+	
+	\vspace{9.5cm}
+	
+	\item \textbf{Prueba 6:} Se probará de nuevo el prototipo (\ref{fig:protoboardv2}) pero en esta ocasión el sensor de corriente se colocará al rededor de tan solo uno de los tres cables (una fase) de la manguera que contiene los tres cables.
+	
+	\begin{table}[H]
+		\begin{center}
+			\begin{tabular}{|l|l|}
+				\hline
+				Número de prueba &  6 \\ \hline 
+				Objetivo de la prueba &  Comprobar funcionamiento del prototipo (\ref{fig:protoboardv2}). \\ \hline 
+				Procedimientos a llevar a cabo &  \makecell[l]{\tabitem Montar diseño del circuito en la protoboard. \\ \tabitem Programar un firmware para visualizar \\ los datos por pantalla.
+					\\ \tabitem Flashear el firmware en la placa NodeMCU.
+					\\ \tabitem Visualizar resultados que se muestran en la pantalla.}
+				\\ \hline 
+				Resultado deseado &  \makecell[l]{Visualizar resultados lógicos dependiendo \\ de que aparato esté conectado al sensor.} \\ \hline 
+				Resultado obtenido &  \makecell[l]{Los resultados son lógicos con respecto a los consumos \\ que está haciendo el aparato al que está conectado \\ el sensor.} \\ \hline 
+				Estado de la prueba &  \textbf{Correcto.} \\ \hline 
+				Posibles soluciones &  \makecell[l]{} \\ \hline 
+				
+			\end{tabular}
+			\caption{Prueba 6.}
+			\label{tabla:prueba6}
+		\end{center}
+	\end{table}
+	
+	\vspace{10.5cm}
+	
+	\item \textbf{Prueba 7:} Comprobación del correcto funcionamiento del prototipo (\ref{fig:protoboardv4}) con un firmware que calcule el irms y que muestre la información a través de la pantalla LCD. Además se comparará la información obtenida utilizando el prototipo con la obtenida utilizando un sensor comercial.
+	
+	\begin{table}[H]
+		\begin{center}
+			\begin{tabular}{|l|l|}
+				\hline
+				Número de prueba &  7 \\ \hline 
+				Objetivo de la prueba &  Comprobar funcionamiento del prototipo (\ref{fig:protoboardv4}). \\ \hline 
+				Procedimientos a llevar a cabo &  \makecell[l]{\tabitem Montar diseño del circuito en la protoboard. \\ \tabitem Programar un firmware para visualizar \\ los datos por pantalla.
+					\\ \tabitem Flashear el firmware en la placa NodeMCU.
+					\\ \tabitem Visualizar resultados que se muestran en la pantalla.
+					\\ \tabitem Comparar con los datos recogidos por el \\ sensor comercial.
+				}
+				\\ \hline 
+				Resultado deseado &  \makecell[l]{Visualizar los mismos resultados que los \\ que obtendríamos utilizando el sensor comercial.} \\ \hline 
+				Resultado obtenido &  \makecell[l]{Los resultados son lógicos con respecto \\ a los consumos que está haciendo el aparato al que está \\ conectado \\ el sensor, pero no son iguales a los datos \\ que visualizamos en el sensor comercial.} \\ \hline 
+				Estado de la prueba &  \textbf{Error.} \\ \hline 
+				Posibles soluciones &  \makecell[l]{Calibrar el sensor.} \\ \hline 
+				
+			\end{tabular}
+			\caption{Prueba 7.}
+			\label{tabla:prueba7}
+		\end{center}
+	\end{table}
+
+	\vspace{8cm}
+	
+	\item \textbf{Prueba 8:} Comprobación del correcto funcionamiento del prototipo (\ref{fig:protoboardv4}) con un firmware que calcule el irms y que muestre la información a través de la pantalla LCD. Además se comparará la información obtenida utilizando el prototipo con la obtenida utilizando un sensor comercial. Con la diferencia de que en esta ocasión se añadirá en el firmware una variable que nos permitirá calibrar el sensor.
+
+	\begin{table}[H]
+		\begin{center}
+			\begin{tabular}{|l|l|}
+				\hline
+				Número de prueba &  8 \\ \hline 
+				Objetivo de la prueba &  Comprobar funcionamiento del prototipo (\ref{fig:protoboardv4}). \\ \hline 
+				Procedimientos a llevar a cabo &  \makecell[l]{\tabitem Montar diseño del circuito en la protoboard. \\ \tabitem Programar un firmware para visualizar \\ los datos por pantalla.
+					\\ \tabitem Flashear el firmware en la placa NodeMCU.
+					\\ \tabitem Visualizar resultados que se muestran en la pantalla.
+					\\ \tabitem Comparar con los datos recogidos por el \\ sensor comercial.
+				}
+				\\ \hline 
+				Resultado deseado &  \makecell[l]{Visualizar los mismos resultados que los \\ que obtendríamos utilizando el sensor comercial.} \\ \hline 
+				Resultado obtenido &  \makecell[l]{La información visualizada utilizando \\el prototipo coincide con la que observamos en el sensor \\ comercial. } \\ \hline 
+				Estado de la prueba &  \textbf{Correcto.} \\ \hline 
+				Posibles soluciones &  \makecell[l]{} \\ \hline 
+				
+			\end{tabular}
+			\caption{Prueba 8.}
+			\label{tabla:prueba8}
+		\end{center}
+	\end{table}
+
+	\item \textbf{Prueba 9:} Revisión del firmware para poder mandar los datos en formato JSON a un servidor.
+
+	\begin{table}[H]
+		\begin{center}
+			\begin{tabular}{|l|l|}
+				\hline
+				Número de prueba &  9 \\ \hline 
+				Objetivo de la prueba &  Enviar la información a un servidor. \\ \hline 
+				Procedimientos a llevar a cabo &  \makecell[l]{\tabitem Adaptar el firmware para enviar datos \\ especificando la IP del servidor. 
+				\\ \tabitem Flashear el firmware en la placa NodeMCU.
+				\\ \tabitem Comprobar que los datos se reciben de forma correcta \\ en el servidor.
+				}
+				\\ \hline 
+				Resultado deseado &  \makecell[l]{Los datos se reciben en el servidor sin ningún \\ tipo de problema.} \\ \hline 
+				Resultado obtenido &  \makecell[l]{El servidor recibe los datos de la manera esperada.} \\ \hline 
+				Estado de la prueba &  \textbf{Correcto.} \\ \hline 
+				Posibles soluciones &  \makecell[l]{} \\ \hline 
+				
+			\end{tabular}
+			\caption{Prueba 9.}
+			\label{tabla:prueba9}
+		\end{center}
+	\end{table}
+	
+\end{itemize}

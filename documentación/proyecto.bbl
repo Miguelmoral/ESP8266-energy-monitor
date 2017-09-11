@@ -1,0 +1,285 @@
+\begin{thebibliography}{10}
+
+\bibitem{adafruitbib}
+{adafruit}.
+\newblock {Biblioteca Adafruit}.
+\newblock \url{https://github.com/adafruit/Adafruit_ADS1X15}.
+\newblock Online; accessed 20 agosto 2017.
+
+\bibitem{calculadoraohm}
+{Apcom}.
+\newblock {ohm’s law calculator}.
+\newblock \url{http://www.apcom-inc.com/resources/ohms-law-calculator}.
+\newblock Online; accessed 26 agosto 2017.
+
+\bibitem{arduino}
+{arduino}.
+\newblock {arduino}.
+\newblock \url{https://es.wikipedia.org/wiki/Arduino}.
+\newblock Online; accessed 20 agosto 2017.
+
+\bibitem{arduinoide}
+{Arduino}.
+\newblock {Arduino ide}.
+\newblock \url{https://www.arduino.cc/en/main/software}.
+\newblock Online; accessed 23 agosto 2017.
+
+\bibitem{atom}
+{Atom}.
+\newblock {Atom}.
+\newblock \url{https://atom.io/}.
+\newblock Online; accessed 23 agosto 2017.
+
+\bibitem{jsongithub}
+{bblanchon}.
+\newblock {C++ JSON library for IoT}.
+\newblock \url{https://github.com/bblanchon/ArduinoJson}.
+\newblock Online; accessed 27 agosto 2017.
+
+\bibitem{Belkin}
+{Belkin}.
+\newblock {Belkin Conserve Insight}.
+\newblock \url{http://www.belkin.com/us/p/P-F7C005/}.
+\newblock Online; accessed 25 mayo 2017.
+
+\bibitem{Bootstrap}
+{Bootstrap}.
+\newblock {Bootstrap}.
+\newblock \url{https://es.wikipedia.org/wiki/Bootstrap_(framework)}.
+\newblock Online; accessed 4 junio 2017.
+
+\bibitem{BritishGas}
+{British Gas}.
+\newblock {British Gas}.
+\newblock \url{https://www.britishgas.co.uk/smart-home/smart-meters.html}.
+\newblock Online; accessed 2 junio 2017.
+
+\bibitem{depreciacion}
+{Carter Mcbride}.
+\newblock {Cómo calcular la amortización de una computadora portátil}.
+\newblock
+  \url{http://www.ehowenespanol.com/calcular-amortizacion-computadora-portatil-como_440173/}.
+\newblock Online; accessed 2 septiembre 2017.
+
+\bibitem{rc.local}
+{dexterindustrie}.
+\newblock {Five Ways To Run a Program On Your Raspberry Pi At Startup}.
+\newblock
+  \url{https://www.dexterindustries.com/howto/run-a-program-on-your-raspberry-pi-at-startup/}.
+\newblock Online; accessed 5 junio 2017.
+
+\bibitem{Django}
+{Django Girls}.
+\newblock {Django Girls}.
+\newblock \url{https://tutorial.djangogirls.org/es/django/}.
+\newblock Online; accessed 4 junio 2017.
+
+\bibitem{Efergyclassic}
+{Efergy}.
+\newblock {Efergy: Elite Classic}.
+\newblock
+  \url{http://efergy.com/es/medidores/medidoresoffline/medidores/elitev1-monitor}.
+\newblock Online; accessed 25 mayo 2017.
+
+\bibitem{Efergy}
+{Efergy}.
+\newblock {Efergy: Engage medidor de consumo eléctrico online}.
+\newblock \url{http://efergy.com/es/engagekit-hub}.
+\newblock Online; accessed 25 mayo 2017.
+
+\bibitem{emonTx}
+{EmonTx}.
+\newblock Emontx openenergymonitor.
+
+\bibitem{Flask}
+{Flask}.
+\newblock {Flask}.
+\newblock \url{http://flask.pocoo.org/}.
+\newblock Online; accessed 4 junio 2017.
+
+\bibitem{floureon}
+{Floureon}.
+\newblock {Floureon Power Meter Energy Monitor}.
+\newblock \url{http://www.floureon.com/product-g_142.html}.
+\newblock Online; accessed 25 mayo 2017.
+
+\bibitem{micropython}
+{George Robotics Limited}.
+\newblock {Micropython}.
+\newblock \url{https://micropython.org/}.
+\newblock Online; accessed 25 agosto 2017.
+
+\bibitem{gitlicencia}
+{GitHub}.
+\newblock {GNU GPL github}.
+\newblock
+  \url{https://github.com/Miguelmoral/ESP8266-energy-monitor/blob/master/LICENSE}.
+\newblock Online; accessed 4 septiembre 2017.
+
+\bibitem{gnugpl}
+{GNU}.
+\newblock {GNU GPL}.
+\newblock \url{https://www.gnu.org/licenses/gpl-3.0.html}.
+\newblock Online; accessed 4 septiembre 2017.
+
+\bibitem{Win32}
+{Gruemaster, tuxinator2009}.
+\newblock {Win32 disk imager}.
+\newblock \url{https://sourceforge.net/projects/win32diskimager/}.
+\newblock Online; accessed 5 junio 2017.
+
+\bibitem{adsfoto}
+{Henry}.
+\newblock {Arduino ADS1115 Module Getting Started Tutorial}.
+\newblock
+  \url{http://henrysbench.capnfatz.com/henrys-bench/arduino-voltage-measurements/arduino-ads1115-module-getting-started-tutorial/}.
+\newblock Online; accessed 20 agosto 2017.
+
+\bibitem{httpclientgithub}
+{hreintke}.
+\newblock {HTTP client}.
+\newblock
+  \url{https://github.com/esp8266/Arduino/tree/master/libraries/ESP8266HTTPClient}.
+\newblock Online; accessed 26 agosto 2017.
+
+\bibitem{lcdgithub}
+{joaopedrosgs}.
+\newblock {Library for the LiquidCrystal LCD display}.
+\newblock
+  \url{https://github.com/fdebrabander/Arduino-LiquidCrystal-I2C-library/blob/master/LiquidCrystal_I2C.h}.
+\newblock Online; accessed 27 agosto 2017.
+
+\bibitem{luawikipedia}
+{LUA}.
+\newblock {Lua wikipedia}.
+\newblock \url{https://es.wikipedia.org/wiki/Lua}.
+\newblock Online; accessed 23 agosto 2017.
+
+\bibitem{httpinfo}
+{Luis Castro}.
+\newblock {¿Qué es HTTP y HTTPS?}
+\newblock
+  \url{https://github.com/esp8266/Arduino/tree/master/libraries/ESP8266HTTPClient}.
+\newblock Online; accessed 27 agosto 2017.
+
+\bibitem{nodemcuversiones}
+{Marcel Stör}.
+\newblock {NodeMCU versiones}.
+\newblock
+  \url{https://frightanic.com/iot/comparison-of-esp8266-nodemcu-development-boards/}.
+\newblock Online; accessed 30 mayo 2017.
+
+\bibitem{repoESP}
+{Miguel Moral}.
+\newblock {GitHub ESP8266-energy-monitor}.
+\newblock \url{https://github.com/Miguelmoral/ESP8266-energy-monitor}.
+\newblock Online; accessed 5 junio 2017.
+
+\bibitem{Neur}
+{Neur}.
+\newblock {Neur solutions}.
+\newblock \url{https://www.neur.io/}.
+\newblock Online; accessed 25 mayo 2017.
+
+\bibitem{jinja2info}
+{Pocoo}.
+\newblock {Welcome to Jinja2}.
+\newblock \url{http://jinja.pocoo.org/docs/2.9/}.
+\newblock Online; accessed 7 septiembre 2017.
+
+\bibitem{protoboard}
+{Protoboard}.
+\newblock {Protoboard}.
+\newblock \url{https://es.wikipedia.org/wiki/Placa_de_pruebas}.
+\newblock Online; accessed 20 agosto 2017.
+
+\bibitem{imagenraspberry}
+{Raspberry}.
+\newblock {Raspberry official}.
+\newblock \url{https://www.raspberrypi.org/blog/raspberry-pi-2-on-sale/}.
+\newblock Online; accessed 30 mayo 2017.
+
+\bibitem{raspbianoficial}
+{Raspberry}.
+\newblock {Web oficial Raspberry}.
+\newblock \url{https://www.raspberrypi.org/downloads/raspbian/}.
+\newblock Online; accessed 30 mayo 2017.
+
+\bibitem{MongoDB}
+{Rubenfa}.
+\newblock {MongoDB: qué es, cómo funciona y cuándo podemos usarlo (o no)}.
+\newblock
+  \url{https://www.genbetadev.com/bases-de-datos/mongodb-que-es-como-funciona-y-cuando-podemos-usarlo-o-no}.
+\newblock Online; accessed 5 junio 2017.
+
+\bibitem{Senseimagen}
+{Sense}.
+\newblock {Sense app}.
+\newblock
+  \url{https://www.bakerelectricsolar.com/blog/2016-11-08/products-we-think-are-cool-%E2%80%93-sense-home-energy-monitor}.
+\newblock Online; accessed 2 junio 2017.
+
+\bibitem{Senseoficial}
+{Sense}.
+\newblock {Sense official web}.
+\newblock \url{https://sense.com/product.html}.
+\newblock Online; accessed 2 junio 2017.
+
+\bibitem{sparkfun}
+{SparkFun}.
+\newblock {SparkFun Datasheet}.
+\newblock
+  \url{https://cdn.sparkfun.com/datasheets/Sensors/Current/ECS1030-L72-SPEC.pdf}.
+\newblock Online; accessed 20 agosto 2017.
+
+\bibitem{lm358}
+{Texas instruments}.
+\newblock {LM358 DataSheet}.
+\newblock \url{http://www.ti.com/lit/ds/symlink/lm158-n.pdf}.
+\newblock Online; accessed 20 agosto 2017.
+
+\bibitem{staticip}
+{ThePiHut}.
+\newblock {How to setup a static IP address on your Raspberry Pi}.
+\newblock
+  \url{https://thepihut.com/blogs/raspberry-pi-tutorials/16683276-how-to-setup-a-static-ip-address-on-your-raspberry-pi}.
+\newblock Online; accessed 5 junio 2017.
+
+\bibitem{pasobajowikipedia}
+{Wikipedia}.
+\newblock {Filtro paso bajo}.
+\newblock \url{https://es.wikipedia.org/wiki/Filtro_paso_bajo}.
+\newblock Online; accessed 26 agosto 2017.
+
+\bibitem{mediacuadraticawiki}
+{Wikipedia}.
+\newblock {Media cuadrática}.
+\newblock
+  \url{https://es.wikipedia.org/wiki/Media_cuadr%C3%A1tica#Valor_eficaz_de_una_corriente_alterna}.
+\newblock Online; accessed 26 agosto 2017.
+
+\bibitem{nodemcuwikipedia}
+{Wikipedia}.
+\newblock {NodeMCU Wikipedia}.
+\newblock \url{https://en.wikipedia.org/wiki/NodeMCU}.
+\newblock Online; accessed 30 mayo 2017.
+
+\bibitem{raspberrywikipedia}
+{Wikipedia}.
+\newblock {Raspberry Wikipedia}.
+\newblock \url{https://es.wikipedia.org/wiki/Raspberry_Pi}.
+\newblock Online; accessed 30 mayo 2017.
+
+\bibitem{valoreficaz}
+{Wikipedia}.
+\newblock {Valor eficaz}.
+\newblock \url{https://es.wikipedia.org/wiki/Valor_eficaz}.
+\newblock Online; accessed 26 agosto 2017.
+
+\bibitem{sensorcorriente}
+{yhdc}.
+\newblock {yhdc current sensor}.
+\newblock \url{http://www.yhdc.us/ES/index.asp}.
+\newblock Online; accessed 20 agosto 2017.
+
+\end{thebibliography}

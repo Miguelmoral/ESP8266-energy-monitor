@@ -1,0 +1,61 @@
+\select@language {spanish}
+\contentsline {chapter}{\numberline {1}Introducci\IeC {\'o}n y motivaci\IeC {\'o}n}{19}{chapter.1}
+\contentsline {section}{\numberline {1.1}Software libre}{20}{section.1.1}
+\contentsline {section}{\numberline {1.2}Hardware principal utilizado en el proyecto}{21}{section.1.2}
+\contentsline {subsection}{\numberline {1.2.1}ESP8266}{21}{subsection.1.2.1}
+\contentsline {subsection}{\numberline {1.2.2}Raspberry Pi}{22}{subsection.1.2.2}
+\contentsline {section}{\numberline {1.3}Sensores de energ\IeC {\'\i }a en el mercado actual.}{24}{section.1.3}
+\contentsline {section}{\numberline {1.4}Tabla comparativa de sensores de energ\IeC {\'\i }a en el mercado.}{32}{section.1.4}
+\contentsline {section}{\numberline {1.5}Porqu\IeC {\'e} hacer nuestro propio monitor}{34}{section.1.5}
+\contentsline {chapter}{\numberline {2}Objetivos}{37}{chapter.2}
+\contentsline {section}{\numberline {2.1}Diagrama objetivos}{38}{section.2.1}
+\contentsline {section}{\numberline {2.2}Conocimientos necesarios para alcanzar estos objetivos.}{40}{section.2.2}
+\contentsline {chapter}{\numberline {3}Planificaci\IeC {\'o}n y presupuesto}{41}{chapter.3}
+\contentsline {section}{\numberline {3.1}Planificaci\IeC {\'o}n del trabajo}{41}{section.3.1}
+\contentsline {section}{\numberline {3.2}Presupuesto del proyecto}{44}{section.3.2}
+\contentsline {chapter}{\numberline {4}M\IeC {\'o}dulo hardware}{45}{chapter.4}
+\contentsline {section}{\numberline {4.1}Requisitos}{45}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Requisitos funcionales}{45}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Requisitos no funcionales}{45}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}Planificaci\IeC {\'o}n}{46}{section.4.2}
+\contentsline {section}{\numberline {4.3}Arquitectura del sistema}{47}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}M\IeC {\'o}dulo principal}{47}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}M\IeC {\'o}dulo sensor}{47}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}M\IeC {\'o}dulo conversor anal\IeC {\'o}gico digital}{48}{subsection.4.3.3}
+\contentsline {subsection}{\numberline {4.3.4}M\IeC {\'o}dulo pantalla}{49}{subsection.4.3.4}
+\contentsline {section}{\numberline {4.4}Coste unitario}{50}{section.4.4}
+\contentsline {section}{\numberline {4.5}Prototipos}{51}{section.4.5}
+\contentsline {section}{\numberline {4.6}Versiones finales}{54}{section.4.6}
+\contentsline {section}{\numberline {4.7}Montaje de la caja}{56}{section.4.7}
+\contentsline {chapter}{\numberline {5}M\IeC {\'o}dulo firmware}{59}{chapter.5}
+\contentsline {section}{\numberline {5.1}Requisitos}{59}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Requisitos funcionales}{59}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Requisitos no funcionales}{59}{subsection.5.1.2}
+\contentsline {section}{\numberline {5.2}Planificaci\IeC {\'o}n}{60}{section.5.2}
+\contentsline {section}{\numberline {5.3}Arquitectura del firmware}{61}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}M\IeC {\'o}dulo de lectura de sensor y c\IeC {\'a}lculo de irms y potencia}{61}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}M\IeC {\'o}dulo para mostrar informaci\IeC {\'o}n en la pantalla LCD}{63}{subsection.5.3.2}
+\contentsline {subsection}{\numberline {5.3.3}M\IeC {\'o}dulo env\IeC {\'\i }o de informaci\IeC {\'o}n al servidor}{63}{subsection.5.3.3}
+\contentsline {chapter}{\numberline {6}M\IeC {\'o}dulo servidor}{65}{chapter.6}
+\contentsline {section}{\numberline {6.1}Requisitos}{65}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Requisitos funcionales}{65}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Requisitos no funcionales}{65}{subsection.6.1.2}
+\contentsline {section}{\numberline {6.2}Backend}{66}{section.6.2}
+\contentsline {section}{\numberline {6.3}Frontend}{66}{section.6.3}
+\contentsline {section}{\numberline {6.4}Servidor}{66}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Sistema Operativo}{67}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}Aprovisionamiento }{67}{subsection.6.4.2}
+\contentsline {subsection}{\numberline {6.4.3}Iniciar aplicaci\IeC {\'o}n web }{67}{subsection.6.4.3}
+\contentsline {subsection}{\numberline {6.4.4}IP est\IeC {\'a}tica Raspberry }{69}{subsection.6.4.4}
+\contentsline {subsection}{\numberline {6.4.5}Aspecto final de la p\IeC {\'a}gina}{70}{subsection.6.4.5}
+\contentsline {chapter}{\numberline {7}Pruebas}{73}{chapter.7}
+\contentsline {chapter}{\numberline {8}Experimentaci\IeC {\'o}n}{81}{chapter.8}
+\contentsline {section}{\numberline {8.1}Comparativas con aparatos reales}{81}{section.8.1}
+\contentsline {section}{\numberline {8.2}Prueba consumo constante}{82}{section.8.2}
+\contentsline {section}{\numberline {8.3}Prueba con un electrodom\IeC {\'e}stico real}{82}{section.8.3}
+\contentsline {section}{\numberline {8.4}Posibilidades de explotaci\IeC {\'o}n de un dispositivo como el presentado}{85}{section.8.4}
+\contentsline {chapter}{\numberline {9}Conclusiones y trabajos futuros}{87}{chapter.9}
+\contentsline {section}{\numberline {9.1}Trabajos futuros}{88}{section.9.1}
+\contentsline {chapter}{\numberline {A}Anexo}{89}{appendix.Alph1}
+\contentsline {section}{\numberline {A.1}Como flashear firmware en el ESP8266}{89}{section.Alph1.1}
+\contentsline {chapter}{Bibliograf\IeC {\'\i }a}{94}{appendix*.8}

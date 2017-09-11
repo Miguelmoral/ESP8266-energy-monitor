@@ -1,0 +1,129 @@
+\chapter*{}
+%\thispagestyle{empty}
+%\cleardoublepage
+
+%\thispagestyle{empty}
+
+\input{portada/portada_2}
+
+
+
+\cleardoublepage
+\thispagestyle{empty}
+
+\begin{center}
+{\large\bfseries Monitorización del consumo eléctrico inalámbrico libre}\\
+\end{center}
+\begin{center}
+Miguel Moral Llamas\\
+\end{center}
+
+%\vspace{0.7cm}
+\noindent{\textbf{Palabras clave}: IoT, ESP8266, monitorización energia}\\
+
+\vspace{0.7cm}
+\noindent{\textbf{Resumen}}\\
+
+El objetivo del proyecto ha sido crear un dispositivo con el menor coste posible que nos permita monitorizar los consumos de un hogar o un dispositivo en concreto.
+
+Este dispositivo es capaz de comunicarse con un servidor alojado en una raspberry pi donde se almacena la información que se recibe del dispositivo vía WiFi. En este servidor además se puede visualizar información básica de los consumos introduciendo las fechas que se desean consultar.
+
+Para la realización del proyecto se ha utilizado una placa nodeMCU 1.0 Amica basada en el chip ESP8266 con un sensor de corriente no invasivo conectado a la misma. Esta placa envía mediante WiFi utilizando el protocolo HTTP los datos que recoge el sensor en formato JSON. Una vez se reciben dichos datos en el servidor estos se almacenan en una base de datos MongoDB. El usuario tendrá acceso a los datos mediante una web alojada en la raspberry pi. 
+\cleardoublepage
+
+
+\thispagestyle{empty}
+
+
+\begin{center}
+{\large\bfseries Free wireless energy monitor }\\
+\end{center}
+\begin{center}
+Miguel Moral Llamas\\
+\end{center}
+
+%\vspace{0.7cm}
+\noindent{\textbf{Keywords}: IoT, ESP8266, Energy monitor}\\
+
+\vspace{0.7cm}
+\noindent{\textbf{Abstract}}\\
+
+The main idea of this project is to create a device as cheap as possible, which allows to check energy consumption from a whole house or only from a particular device.
+
+
+This device can communicate with a server set up in a server(wich can be a Rapberry Pi). The server also stores all the data posted from the device using a WiFi connection. We also can check basic information about consumption in this server just introducing the specific dates we want to check. 
+
+
+We used nodeMCU 1.0 Amica board based on ESP8266 chip and a non invasive current sensor conected to this board. This board which is connected via WiFi and sends JSON data using HTTP protocol. We store all this data in a MongoDB data base. The user will be able to check all this data just visiting a web site hosted in the server. 
+
+
+\chapter*{}
+\thispagestyle{empty}
+
+\noindent\rule[-1ex]{\textwidth}{2pt}\\[4.5ex]
+
+Yo, \textbf{Miguel Moral Llamas}, alumno de la titulación \textbf{grado en ingeniería informática} de la \textbf{Escuela Técnica Superior
+de Ingenierías Informática y de Telecomunicación de la Universidad de Granada}, con DNI XXXXXXXX-X, autorizo la
+ubicación de la siguiente copia de mi Trabajo Fin de Grado en la biblioteca del centro para que pueda ser
+consultada por las personas que lo deseen.
+
+\vspace{2cm}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.4]{imagenes/firmaalumno.png}
+	\label{fig:firmaalumno}
+\end{figure}
+
+
+
+\vspace{2cm}
+
+\begin{flushright}
+Granada a 7 de septiembre de 2017 .
+\end{flushright}
+
+
+\chapter*{}
+\thispagestyle{empty}
+
+\noindent\rule[-1ex]{\textwidth}{2pt}\\[4.5ex]
+
+D. \textbf{Sergio Alonso Burgos}, Profesor del Área de \textbf{Lenguajes y Sistemas Informáticos} del Departamento \textbf{Lenguajes y Sistemas Informáticos} de la Universidad de Granada.
+
+
+\vspace{0.5cm}
+
+\textbf{Informa:}
+
+\vspace{0.5cm}
+
+Que el presente trabajo, titulado \textit{\textbf{Diseño e implementación de un sistema de monitorización de consumo eléctrico doméstico inalámbrico y libre}},
+ha sido realizado bajo su supervisión por \textbf{Miguel Moral Llamas}, y autorizo la defensa de dicho trabajo ante el tribunal
+que corresponda.
+
+\vspace{0.5cm}
+
+Y para que conste, expiden y firman el presente informe en Granada a 7 de Septiembre de 2017 .
+
+\vspace{1cm}
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.3]{imagenes/firmaZerjillo3.png}
+	\label{fig:firmatutor}
+\end{figure}
+
+
+\vspace{1cm}
+
+\noindent \textbf{Sergio Alonso Burgos}
+
+\chapter*{Agradecimientos}
+\thispagestyle{empty}
+
+       \vspace{1cm}
+
+
+A todas aquellas personas que me han ayudado en esta etapa de mi vida. En especial a mi familia y amigos por apoyarme en los malos momentos y a mi tutor D. Sergio Alonso Burgos por su tiempo y dedicación durante la realización de este proyecto.
+
