@@ -4,6 +4,7 @@ from pymongo import MongoClient
 from flask import render_template
 import time
 import datetime
+#from datetime import datetime
 from pytz import timezone
 import pytz
 import json
@@ -18,26 +19,18 @@ app = Flask(__name__)
 app.secret_key = 'adadasasd9sd9d9dsss'
 @app.route('/', methods = ['GET'])
 def index():
-    #--------------------Busqueda fecha-----------------------
-    start = datetime.datetime(2017, 05, 04, 19, 28, 07)
-    end = datetime.datetime(2017, 05, 04, 23, 28, 35)
-    myCursor = db.restaurants.find({'date': {'$lt': end, '$gte': start}})
-    return render_template('index.html', myCursor=myCursor)
+    return render_template('index.html')
 
 @app.route('/postjson', methods = ['GET','POST'])
 def postJsonHandler():
-    # contenido = request.get_json()
-    # #contenido = json.loads(data)
-    # return (contenido)
 
     content = request.get_json()
-    # tiempo = {}
-    # tiempo = time.strftime("%c")
+
     if content:
         raw = datetime.datetime.now(pytz.utc)
         tiempo = raw.astimezone(pytz.timezone('Europe/Brussels'))
         content['date'] = tiempo
-        result = db.pruebas.insert_one(content) #Sustituir por la base de datos deseada
+        result = db.pruebas.insert_one(content) #sustituir por la base de datos deseada
     print result
     print tiempo
     return 'JSON posted'
